@@ -1,19 +1,9 @@
 <script setup lang="ts">
   document.body.className = 'contact';
-// import { onMounted,onUnmounted,ref } from 'vue';
+
 const currentYear = new Date().getFullYear();
 
-// const bg = document.body.style.backgroundColor;
 
-// onMounted(()=>{
-// document.body.style.backgroundColor = '#222222';
-// document.body.style.color = '#ece7e1';
-// });
-
-// onUnmounted(()=>{
-//   document.body.style.backgroundColor = null;
-//   document.body.style.color = null;
-// });
 
 </script>
 
