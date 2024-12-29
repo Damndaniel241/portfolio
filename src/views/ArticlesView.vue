@@ -24,7 +24,7 @@ document.body.className = 'articles';
         <div class="lg:h-20 lg:w-[1px] w-[2em] border  bg-[#ece7e1]" />
       </div>
       <span class="lg:transform lg:-rotate-90 text-sm tracking-wider"
-        >&copy;{{ currentYear }}</span
+        >&copy; / {{ currentYear }}</span
       >
     </div>
     <div class="lg:ms-[10em] flex flex-col">

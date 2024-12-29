@@ -21,7 +21,7 @@ document.body.className = "work";
         ></span
       ></RouterLink>
       <div class="w-[1px] h-20 bg-gray-700"></div>
-      <div class="-rotate-90 tracking-widest text-xs">@/{{ currentYear }}</div>
+      <div class="-rotate-90 tracking-widest text-xs">&copy;/{{ currentYear }}</div>
     </div>
 
     <!-- Main Content -->

@@ -54,7 +54,7 @@ document.body.className = 'index';
         </a>
       </div>
       <div class="h-20 w-[1px] bg-[#222222]" />
-      <span class="transform -rotate-90 text-sm tracking-wider">&copy;{{ currentYear }}</span>
+      <span class="transform -rotate-90 text-sm tracking-wider">&copy;/{{ currentYear }}</span>
     </div>
 
     <div class="lg:flex  px-12 py-6">
@@ -137,7 +137,7 @@ document.body.className = 'index';
             class="absolute top-1/2 left-0 w-full h-[1px] bg-[#222222] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
           ></span>
         </a>
-        <div class=" w-[2em] border text-black bg-black" />
+        <div class=" w-[2em] border  bg-black" />
       </div>
 
       <span class=" text-[0.7em]   tracking-wider">&copy; / {{ currentYear }}</span>
