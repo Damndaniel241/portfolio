@@ -2,6 +2,7 @@
 
 import { ref, watch } from "vue";
 import { useRoute } from "vue-router";
+// import { nextTick } from "vue"
 
 
 const currentBackgroundColor = ref("#ece7e1"); // Default background color
@@ -37,7 +38,7 @@ const style = routeStyles[newPath] || { backgroundColor: "#ece7e1", textColor: "
 </script>
 
 <template>
-  <div :style="{ backgroundColor: currentBackgroundColor, color: currentTextColor }">
+  <div :style="{ backgroundColor: currentBackgroundColor + ' !important', color: currentTextColor + ' !important' }">
 <RouterView />
 </div>
      
