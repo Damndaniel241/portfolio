@@ -33,7 +33,7 @@ const currentYear = new Date().getFullYear();
         <!-- </div> -->
         
         <p
-          class="text-[1.9rem] lg:text-[2.875rem] lg:mt-[2em] lg:mb-[1.2em] font-grandslang lg:w-[60%] leading-[3rem]"
+          class="text-[1.9rem] lg:text-[2.875rem]  lg:mb-[1.2em] font-grandslang lg:w-[60%] leading-[3rem]"
         >
           Hi, I'm Daniel. A developer and lifelong problem solver.
         </p>

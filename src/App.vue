@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useRoute } from "vue-router";
-import { motion } from '@vueuse/motion';
+// import { motion } from '@vueuse/motion';
 
 // Access the current route
 const route = useRoute();
