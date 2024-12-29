@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { onMounted,onUnmounted,ref } from 'vue';
+// import { onMounted,onUnmounted,ref } from 'vue';
 const currentYear = new Date().getFullYear();
 
 // const bg = document.body.style.backgroundColor;
