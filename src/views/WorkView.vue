@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
 <template>
 
   <!-- desktop view -->
-    <div class=" lg:flex h-screen bg-[#222222] text-[#ece7e1] ">
+    <div class=" lg:flex hidden h-screen bg-[#222222] text-[#ece7e1] ">
   <!-- Sidebar -->
   <div class="w-[4rem] flex flex-col justify-between py-6 items-center border-r border-gray-700">
     <RouterLink
