@@ -69,7 +69,7 @@ document.body.className = 'index';
         Software Developer / Writer / Artist
         </p>
         <p class="m-0 text-[0.813rem]">
-          Currently working full-time as a Software Developer at <span class="underline font-medium">dothexa</span>
+          Currently working full-time as a Software Developer at <a href="https://github.com/dothexa" class="underline underline-offset-[3px] font-medium">dothexa</a>
         </p>
       </div>
     </div>
@@ -156,7 +156,7 @@ document.body.className = 'index';
         Software Developer / Writer / Artist
         </p>
         <p class="m-0 text-[0.813rem]">
-          Currently working full-time as a Software Developer at <span class="underline font-medium">dothexa</span>
+          Currently working full-time as a Software Developer at <span class="underline underline-offset-[3px] font-medium">dothexa</span>
         </p>
       </div>
     </div>
