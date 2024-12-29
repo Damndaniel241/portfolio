@@ -90,7 +90,7 @@ const currentYear = new Date().getFullYear();
 
 
   <!-- mobile view -->
-  <div class=" mx-[auto] w-[85%] sm:w-[90%]   selection:bg-[#222222] selection:text-[#ECE7E1] ">
+  <div class=" mx-[auto] w-[85%] sm:w-[90%] lg:hidden  selection:bg-[#222222] selection:text-[#ECE7E1] ">
     <div id="sidebar" class="mt-[1.3em]  flex uppercase justify-between items-center ">
         <div id="links" class="flex items-center gap-5">
         <a
