@@ -112,7 +112,7 @@ const currentYear = new Date().getFullYear();
 </template>
 
 
-<style>
+<style >
 body {
   /* background-color: #fdfcfb; */
   color:#222222 !important; 

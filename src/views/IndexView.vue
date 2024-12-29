@@ -1,5 +1,16 @@
 <script setup lang="ts">
+import { onMounted,onUnmounted } from 'vue';
 const currentYear = new Date().getFullYear();
+
+// onMounted(()=>{
+// document.body.style.backgroundColor = '#ece7e1 !important';
+// document.body.style.color = '#222222 !important';
+// });
+
+// onUnmounted(()=>{
+//   document.body.style.backgroundColor = null;
+//   document.body.style.color = null;
+// });
 </script>
 
 <template>
@@ -171,7 +182,7 @@ const currentYear = new Date().getFullYear();
   </div>
 </template>
 
-<style>
+<style >
 body {
   /* background-color: #fdfcfb; */
   color:#222222 !important; 
