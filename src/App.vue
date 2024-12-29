@@ -6,7 +6,7 @@ import { useRoute } from "vue-router";
 // Access the current route
 const route = useRoute();
 // Dynamically compute the background color based on route meta
-const currentBackgroundColor = computed(() => route.meta.backgroundColor || "#ece7e1");
+// const currentBackgroundColor = computed(() => route.meta.backgroundColor || "#ece7e1");
 </script>
 
 <template>
