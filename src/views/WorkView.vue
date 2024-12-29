@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import NewPill from "@/components/NewPill.vue";
+// import { onBeforeMount } from "vue";
 const currentYear = new Date().getFullYear();
+
+
+  document.body.className = 'work';
+
 </script>
 
 <template>

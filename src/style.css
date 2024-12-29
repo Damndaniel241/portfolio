@@ -21,6 +21,31 @@ a {
   text-decoration: none; /* Optional, removes underline */
 }
 
+body.index{
+  color:#222222 !important; 
+  background-color: #ece7e1 !important;
+
+}
+body.work{
+  background-color: #222222 !important;
+  color: #ece7e1 !important;
+}
+
+body.contact{
+  background-color:#222222 !important; 
+  color: #ece7e1 !important;
+}
+
+body.articles{
+  background-color:#222222 !important ;
+  color:#ece7e1 !important;
+}
+
+body.about{
+  color:#222222 !important; 
+  background-color: #ece7e1 !important;
+}
+
 @font-face {
   font-family: "GrandSlang-Roman";
   src: url('/GrandSlang-Roman.ttf') format('truetype');

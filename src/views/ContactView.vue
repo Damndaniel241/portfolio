@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+  document.body.className = 'contact';
 // import { onMounted,onUnmounted,ref } from 'vue';
 const currentYear = new Date().getFullYear();
 

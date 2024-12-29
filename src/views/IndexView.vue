@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // import { onMounted,onUnmounted } from 'vue';
 const currentYear = new Date().getFullYear();
-
+document.body.className = 'index';
 // onMounted(()=>{
 // document.body.style.backgroundColor = '#ece7e1 !important';
 // document.body.style.color = '#222222 !important';

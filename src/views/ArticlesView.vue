@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const currentYear = new Date().getFullYear();
+
+document.body.className = 'articles';
 </script>
 
 <template>
