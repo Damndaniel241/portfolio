@@ -3,9 +3,7 @@ import NewPill from "@/components/NewPill.vue";
 // import { onBeforeMount } from "vue";
 const currentYear = new Date().getFullYear();
 
-
-  document.body.className = 'work';
-
+document.body.className = "work";
 </script>
 
 <template>
@@ -52,7 +50,8 @@ const currentYear = new Date().getFullYear();
           <!-- Project Item -->
           <div>
             <a
-              href="https://www.nairaland.com"
+              href="https://github.com/dothexa/classroom-web"
+              target="_blank"
               class="block text-[5.906rem] hover:italic cursor-pointer font-grandslang"
               >classrooms</a
             >
@@ -63,7 +62,8 @@ const currentYear = new Date().getFullYear();
           <!-- Project Item -->
           <div>
             <a
-              href="https:nairalnd.com"
+              href="https://cinemascope3.netlify.app/"
+              target="_blank"
               class="block text-[5.906rem] hover:italic cursor-pointer font-grandslang"
               >cinemascope</a
             >
@@ -75,7 +75,8 @@ const currentYear = new Date().getFullYear();
           <!-- Project Item -->
           <div>
             <a
-              href="https:nairalnd.com"
+              href="https://camper2.netlify.app/"
+              target="_blank"
               class="block text-[5.906rem] hover:italic cursor-pointer font-grandslang"
               >camper</a
             >
@@ -89,7 +90,8 @@ const currentYear = new Date().getFullYear();
           <!-- Project Item -->
           <div>
             <a
-              href="https:nairalnd.com"
+              href="https://github.com/Damndaniel241/firekat"
+              target="_blank"
               class="block text-[5.906rem] hover:italic cursor-pointer font-grandslang"
               >firekat</a
             >
@@ -99,7 +101,7 @@ const currentYear = new Date().getFullYear();
           </div>
           <div>
             <a
-              href="https:nairalnd.com"
+              href="https://github.com/Damndaniel241/snack-store"
               class="block text-[5.906rem] hover:italic cursor-pointer font-grandslang"
               >snackr</a
             >
@@ -156,7 +158,7 @@ const currentYear = new Date().getFullYear();
       <div class="font-grandslang uppercase leading-[4em]">
         <div>
           <a
-            href="https://www.nairaland.com"
+            href="https://github.com/dothexa/classroom-web"
             class="block text-[2.506rem] hover:italic cursor-pointer font-grandslang"
             >classrooms</a
           >
@@ -169,10 +171,11 @@ const currentYear = new Date().getFullYear();
         <!-- Project Item -->
         <div>
           <a
+            href="https://cinemascope3.netlify.app/"
             class="block text-[2.506rem] hover:italic cursor-pointer font-grandslang"
           >
             cinemascope
-        </a>
+          </a>
           <div
             class="lg:flex hidden items-center gap-2 text-sm tracking-widest mt-1"
           >
@@ -183,10 +186,11 @@ const currentYear = new Date().getFullYear();
         <!-- Project Item -->
         <div>
           <a
+            href="https://camper2.netlify.app/"
             class="block text-[2.506rem] hover:italic cursor-pointer font-grandslang"
           >
             camper
-        </a>
+          </a>
           <div
             class="lg:flex hidden items-center gap-2 text-sm tracking-widest mt-1"
           >
@@ -197,10 +201,11 @@ const currentYear = new Date().getFullYear();
         <!-- Project Item -->
         <div>
           <a
+            href="https://github.com/Damndaniel241/firekat"
             class="block text-[2.506rem] hover:italic cursor-pointer font-grandslang"
           >
             firekat
-        </a>
+          </a>
           <span
             class="lg:block hidden text-sm tracking-widest mt-1 text-gray-400"
           >
@@ -209,10 +214,11 @@ const currentYear = new Date().getFullYear();
         </div>
         <div>
           <a
+            href="https://github.com/Damndaniel241/snack-store"
             class="block text-[2.506rem] hover:italic cursor-pointer font-grandslang"
           >
             snackr
-        </a>
+          </a>
           <span
             class="lg:block hidden text-sm tracking-widest mt-1 text-gray-400"
           >
