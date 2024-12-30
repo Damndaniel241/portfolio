@@ -7,7 +7,7 @@ document.body.className = 'about';
   <div id="container-about" class="mx-auto w-[85%] lg:w-full lg:h-screen  lg:flex selection:bg-[#222222] selection:text-[#ECE7E1]">
     <div
       id="sidebar"
-      class="mt-[1.3em] flex lg:flex-col items-center justify-between lg:py-6 lg:fixed lg:top-0 lg:left-0 lg:h-full"
+      class="mt-[1.3em] flex lg:flex-col items-center justify-between lg:py-6 lg:fixed  lg:top-0 lg:left-0 lg:h-full"
     >
       <div id="links" class="flex lg:flex-col items-center gap-5 lg:gap-[3em]">
         <RouterLink
@@ -26,7 +26,7 @@ document.body.className = 'about';
       >
     </div>
 
-    <div class="lg:ms-[10em] flex flex-col ">
+    <div class="lg:ms-[10em] flex flex-col lg:overflow-y-scroll lg:no-scrollbar">
       <div class="lg:flex lg:flex-col  gap-[1.2em] ">
         <!-- <div class="flex"> -->
             <p id="about" class="lg:text-[11.813rem] text-[3.7rem] font-grandslang capitalize mt-[1em] mb-[0.5em] ">about</p>
@@ -116,9 +116,7 @@ document.body.className = 'about';
 <style >
 
 
-.bc-reset{
-  border-color:black;
-}
+
 .overlay {
     position: absolute;
     top: 0;
