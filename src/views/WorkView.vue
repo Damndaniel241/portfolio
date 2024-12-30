@@ -11,7 +11,7 @@ document.body.className = "work";
   <div id="container-11" class="lg:flex hidden h-screen bg-[#222222] text-[#ece7e1]">
     <!-- Sidebar -->
     <div
-      class="w-[4rem] flex flex-col justify-between py-6 items-center border-r border-gray-700"
+      class="w-[4rem] flex flex-col justify-between py-6 items-center  "
     >
       <RouterLink
         :to="{ name: 'Index' }"
