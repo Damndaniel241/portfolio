@@ -179,7 +179,7 @@ document.body.className = 'index';
 <style >
 
 #container-1,#container-2{
-    animation: swoosh-in 1.2s ease-out forwards;
+    animation: swoosh-in-bottom 1.2s ease-out forwards;
     background-color: #ece7e1;
     position: relative;
   
@@ -195,7 +195,7 @@ document.body.className = 'index';
   #ebere-2{
     opacity:0;
     transform: translateY(50px); /* Start from below */
-    animation: slide-in-up 1s ease forwards 1.2s; /* Bottom-to-top swoosh */
+    animation: slide-in-down 1s ease forwards 1.2s; /* Bottom-to-top swoosh */
   }
 
 

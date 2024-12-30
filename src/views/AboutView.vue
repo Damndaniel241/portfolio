@@ -19,7 +19,7 @@ document.body.className = 'about';
             class="absolute top-1/2 left-0 w-full h-[1px] bg-[#222222] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300"
           ></span>
         </RouterLink>
-        <div class="lg:h-20 lg:w-[1px] w-[2em] border bg-[#222222]" />
+        <div class="lg:h-20 lg:w-[1px] w-[2em] border lg:border-none bg-[#222222]" />
       </div>
       <span class="lg:transform lg:-rotate-90 text-sm tracking-wider"
         >&copy; / {{ currentYear }}</span
@@ -115,6 +115,10 @@ document.body.className = 'about';
 
 <style >
 
+
+.bc-reset{
+  border-color:black;
+}
 .overlay {
     position: absolute;
     top: 0;
