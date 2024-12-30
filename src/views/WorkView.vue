@@ -8,7 +8,7 @@ document.body.className = "work";
 
 <template>
   <!-- desktop view -->
-  <div id="container-11" class="lg:flex hidden h-screen bg-[#222222] text-[#ece7e1]">
+  <div id="container-11" class="lg:flex hidden h-screen bg-[#222222] text-[#ece7e1] selection:bg-[#ece7e1] selection:text-[#222222]">
     <!-- Sidebar -->
     <div
       class="w-[4rem] flex flex-col justify-between py-6 items-center  "
@@ -117,7 +117,7 @@ document.body.className = "work";
   <!-- mobile view -->
   <div
   id="container-12"
-    class="mx-auto lg:hidden w-[85%] lg:h-screen select-none bg-[#222222] text-[#ece7e1]"
+    class="mx-auto lg:hidden w-[85%] lg:h-screen select-none bg-[#222222] text-[#ece7e1] selection:bg-[#ece7e1] selection:text-[#222222]"
   >
     <div
       id="sidebar"
