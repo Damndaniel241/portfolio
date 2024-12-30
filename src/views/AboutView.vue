@@ -4,7 +4,7 @@ document.body.className = 'about';
 </script>
 
 <template>
-  <div class="mx-auto w-[85%] lg:h-screen  lg:flex selection:bg-[#222222] selection:text-[#ECE7E1]">
+  <div id="container-about" class="mx-auto w-[85%] lg:w-full lg:h-screen  lg:flex selection:bg-[#222222] selection:text-[#ECE7E1]">
     <div
       id="sidebar"
       class="mt-[1.3em] flex lg:flex-col items-center justify-between lg:py-6 lg:fixed lg:top-0 lg:left-0 lg:h-full"
@@ -29,7 +29,7 @@ document.body.className = 'about';
     <div class="lg:ms-[10em] flex flex-col ">
       <div class="lg:flex lg:flex-col  gap-[1.2em] ">
         <!-- <div class="flex"> -->
-            <p class="lg:text-[11.813rem] text-[3.7rem] font-grandslang capitalize mt-[1em] mb-[0.5em] ">about</p>
+            <p id="about" class="lg:text-[11.813rem] text-[3.7rem] font-grandslang capitalize mt-[1em] mb-[0.5em] ">about</p>
             <!-- <div class=""><img src="/src/assets/avatar-1.webp" class="w-[em]"></div> -->
         <!-- </div> -->
         
@@ -114,12 +114,90 @@ document.body.className = 'about';
 
 
 <style >
-/* body {
 
-  color:#222222 !important; 
-  background-color: #ece7e1 !important;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+    background-color: #222222;
+  }
 
- 
-} */
+  #container-about{
+    animation: swoosh-in-bottom 1.2s ease-out forwards;
+    background-color: #ece7e1;
+    position: relative;
+  
+    transition: all 0.8s ease;
+  }
+
+
+  #about{
+    opacity:0;
+    transform: translateY(-100px); /* Start from below */
+    animation: slide-in-down 1s ease forwards 1.2s; /* Bottom-to-top swoosh */
+  }
+
+
+  
+  @keyframes swoosh-in-bottom {
+  0% {
+    transform: translateY(100%); /* Start from off-screen bottom */
+  }
+  100% {
+    transform: translateY(0); /* End in its normal position */
+  }
+}
+
+
+
+  /* Keyframes */
+  
+  /* Main container top-to-bottom swoosh */
+  @keyframes swoosh-in {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Bottom-to-top swoosh for container_content_inner */
+  @keyframes slide-in-up {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Top-to-bottom slide-in for other elements */
+  @keyframes slide-in-down {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in effect for images and other elements */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 </style>

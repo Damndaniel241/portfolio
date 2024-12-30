@@ -8,7 +8,7 @@ document.body.className = "work";
 
 <template>
   <!-- desktop view -->
-  <div class="lg:flex hidden h-screen bg-[#222222] text-[#ece7e1]">
+  <div id="container-11" class="lg:flex hidden h-screen bg-[#222222] text-[#ece7e1]">
     <!-- Sidebar -->
     <div
       class="w-[4rem] flex flex-col justify-between py-6 items-center border-r border-gray-700"
@@ -27,7 +27,7 @@ document.body.className = "work";
     <!-- Main Content -->
     <div class="flex px-12 py-6">
       <!-- Work Section -->
-      <div class="w-1/3 pr-12 flex flex-col justify-end mx-[4.188rem]">
+      <div id="work-1" class="w-1/3 pr-12 flex flex-col justify-end mx-[4.188rem]">
         <h1 class="text-lg font-bold tracking-widest mb-4">WORK</h1>
         <p class="text-sm leading-relaxed mb-4 text-[0.875rem]">
           Here are a few of my recent projects, showcasing my skills and
@@ -116,6 +116,7 @@ document.body.className = "work";
 
   <!-- mobile view -->
   <div
+  id="container-12"
     class="mx-auto lg:hidden w-[85%] lg:h-screen select-none bg-[#222222] text-[#ece7e1]"
   >
     <div
@@ -140,7 +141,7 @@ document.body.className = "work";
     </div>
 
     <div id="main" class="flex flex-col mt-[4em] gap-[2em]">
-      <div class="flex flex-col">
+      <div id="work-2" class="flex flex-col">
         <h1 class="text-lg font-bold tracking-widest mb-4">WORK</h1>
         <p class="leading-relaxed mb-4 text-[0.875rem]">
           Here are a few of my recent projects, showcasing my skills and
@@ -231,10 +232,78 @@ document.body.className = "work";
 </template>
 
 <style>
-/* body {
-  background-color: #222222 !important;
-  color: #ece7e1 !important;
-} */
+
+#container-11,#container-12{
+    animation: swoosh-in-bottom 1.2s ease-out forwards;
+    background-color: #222222;
+    position: relative;
+  
+    transition: all 0.8s ease;
+  }
+
+
+  #work-1,#work-2{
+    opacity:0;
+    transform: translateY(-100px); 
+    animation: slide-in-down 1s ease forwards 1.2s;
+  }
+
+
+  
+  @keyframes swoosh-in-bottom {
+  0% {
+    transform: translateY(100%); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+
+
+
+  @keyframes swoosh-in {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+ 
+  @keyframes slide-in-up {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes slide-in-down {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } 
 
 .scrollbar-hide {
   -ms-overflow-style: none; /* Internet Explorer 10+ */

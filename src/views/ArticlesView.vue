@@ -6,7 +6,7 @@ document.body.className = 'articles';
 
 <template>
   <!-- https://github.com/dothexa/classroom-web -->
-  <div class="mx-auto w-[85%] lg:h-screen lg:flex select-none bg-[#222222] text-[#ece7e1]">
+  <div id="container-article" class="mx-auto w-[85%] lg:w-full lg:h-screen lg:flex select-none bg-[#222222] text-[#ece7e1]">
     <div
       id="sidebar"
       class="mt-[1.3em] flex lg:flex-col items-center justify-between lg:py-6 lg:fixed lg:top-0 lg:left-0 lg:h-full"
@@ -29,7 +29,7 @@ document.body.className = 'articles';
     </div>
     <div class="lg:ms-[10em] flex flex-col">
       <div class="flex flex-col  gap-[1.2em]">
-        <p class="lg:text-[6.813rem]  text-[3.7rem] leading-[3rem] lg:leading-none font-grandslang capitalize mt-[1em] mb-[0.5em]">Coming soon...</p>
+        <p id="coming-soon" class="lg:text-[6.813rem]  text-[3.7rem] leading-[3rem] lg:leading-none font-grandslang capitalize mt-[1em] mb-[0.5em]">Coming soon...</p>
         <p class="text-[0.875rem] font-montserrat lg:mt-[4em] mb-[1.2em] lg:w-[60%]">
           Need an aesthetic, well structured website that you can own and
           maintain yourself? Get in touch.
@@ -74,9 +74,79 @@ document.body.className = 'articles';
 
 
 <style>
-/* body{
-    background-color:#222222 !important ;
-    color:#ece7e1 !important;
-} */
+
+#container-article{
+    animation: swoosh-in-bottom 1.2s ease-out forwards;
+    background-color: #222222;
+    position: relative;
+  
+    transition: all 0.8s ease;
+  }
+
+
+  #coming-soon{
+    opacity:0;
+    transform: translateY(-100px); /* Start from below */
+    animation: slide-in-down 1s ease forwards 1.2s; /* Bottom-to-top swoosh */
+  }
+
+
+  
+  @keyframes swoosh-in-bottom {
+  0% {
+    transform: translateY(100%); /* Start from off-screen bottom */
+  }
+  100% {
+    transform: translateY(0); /* End in its normal position */
+  }
+}
+
+
+
+  /* Keyframes */
+  
+  /* Main container top-to-bottom swoosh */
+  @keyframes swoosh-in {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Bottom-to-top swoosh for container_content_inner */
+  @keyframes slide-in-up {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Top-to-bottom slide-in for other elements */
+  @keyframes slide-in-down {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in effect for images and other elements */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 </style>

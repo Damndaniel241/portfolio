@@ -1,22 +1,14 @@
 <script setup lang="ts">
-// import { onMounted,onUnmounted } from 'vue';
+
 const currentYear = new Date().getFullYear();
 document.body.className = 'index';
-// onMounted(()=>{
-// document.body.style.backgroundColor = '#ece7e1 !important';
-// document.body.style.color = '#222222 !important';
-// });
 
-// onUnmounted(()=>{
-//   document.body.style.backgroundColor = null;
-//   document.body.style.color = null;
-// });
 </script>
 
 <template>
 
     <!-- desktop view -->
-  <div class="hidden h-screen lg:flex selection:bg-[#222222] selection:text-[#ECE7E1]">
+  <div id="container-1" class="hidden h-screen lg:flex selection:bg-[#222222] selection:text-[#ECE7E1]">
     <div id="sidebar" class="lg:flex flex-col items-center justify-between py-6 w-[4rem] hidden">
       <div id="links" class="flex flex-col items-center gap-4">
         <a
@@ -61,6 +53,7 @@ document.body.className = 'index';
     <div class=" flex flex-col justify-end w-1/3 pr-12 mx-[4.188em]" >
       <div class="flex flex-col  gap-[1.2em]">
         <p
+        id="ebere-1"
           class="m-0 uppercase text-[0.938rem] tracking-widest text-[#222222] font-semibold"
         >
           daniel ebere
@@ -101,7 +94,7 @@ document.body.className = 'index';
 
 
   <!-- mobile view -->
-  <div class=" mx-[auto] w-[85%] sm:w-[90%] lg:hidden  selection:bg-[#222222] selection:text-[#ECE7E1] ">
+  <div id="container-2" class=" mx-[auto] w-[85%] sm:w-[90%] lg:hidden  selection:bg-[#222222] selection:text-[#ECE7E1] ">
     <div id="sidebar" class="mt-[1.3em]  flex uppercase justify-between items-center ">
         <div id="links" class="flex items-center gap-5">
         <a
@@ -148,6 +141,7 @@ document.body.className = 'index';
         <div class=" flex flex-col" >
       <div class="flex flex-col  gap-[1.2em]">
         <p
+        id="ebere-2"
           class="m-0 uppercase text-[0.938rem] tracking-widest text-[#222222] font-semibold"
         >
           daniel ebere
@@ -183,13 +177,85 @@ document.body.className = 'index';
 </template>
 
 <style >
-/* body {
 
-  color:#222222 !important; 
-  background-color: #ece7e1 !important;
+#container-1,#container-2{
+    animation: swoosh-in 1.2s ease-out forwards;
+    background-color: #ece7e1;
+    position: relative;
+  
+    transition: all 0.8s ease;
+  }
 
-} */
 
+  #ebere-1{
+    opacity:0;
+    transform: translateY(100px); /* Start from below */
+    animation: slide-in-up 1s ease forwards 1.2s; /* Bottom-to-top swoosh */
+  }
+  #ebere-2{
+    opacity:0;
+    transform: translateY(50px); /* Start from below */
+    animation: slide-in-up 1s ease forwards 1.2s; /* Bottom-to-top swoosh */
+  }
+
+
+  
+  @keyframes swoosh-in-bottom {
+  0% {
+    transform: translateY(100%); /* Start from off-screen bottom */
+  }
+  100% {
+    transform: translateY(0); /* End in its normal position */
+  }
+}
+
+
+
+  /* Keyframes */
+  
+  /* Main container top-to-bottom swoosh */
+  @keyframes swoosh-in {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Bottom-to-top swoosh for container_content_inner */
+  @keyframes slide-in-up {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Top-to-bottom slide-in for other elements */
+  @keyframes slide-in-down {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in effect for images and other elements */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 
 </style>
